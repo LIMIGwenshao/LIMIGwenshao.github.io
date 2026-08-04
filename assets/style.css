@@ -9,6 +9,8 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+html { overflow-x: hidden; }
+
 body {
   font-family: Georgia, "Times New Roman", "Songti SC", serif;
   color: var(--text);
@@ -22,6 +24,15 @@ body {
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+.banner {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: 240px;
+  background: url("banner.jpg") center 35% / cover no-repeat;
+  margin-top: -2.5rem;
+  margin-bottom: 2rem;
+}
 
 nav {
   display: flex;
@@ -82,6 +93,7 @@ h2 {
 
 .pub { margin-bottom: 1.5rem; }
 .pub-title { font-weight: 600; }
+.pub-title a { color: var(--accent); }
 .pub-authors { font-size: 0.97rem; }
 .pub-venue { font-style: italic; color: var(--muted); font-size: 0.95rem; }
 .pub-links { font-size: 0.92rem; }
@@ -109,8 +121,11 @@ footer {
   color: var(--muted);
   font-size: 0.85rem;
 }
+.credit { font-size: 0.75rem; margin-top: 0.25rem; }
+.credit a { color: var(--muted); text-decoration: underline; }
 
 @media (max-width: 600px) {
+  .banner { height: 160px; }
   header { flex-direction: column-reverse; }
   .photo { width: 130px; height: 130px; }
   .news-list li, .edu-list li { flex-direction: column; gap: 0; }
