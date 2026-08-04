@@ -1,0 +1,118 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #1a4f8b;
+  --rule: #e4e4e4;
+  --bg: #ffffff;
+  --code-bg: #f6f6f4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+  font-size: 1.05rem;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+nav a { color: var(--muted); }
+nav a:hover { color: var(--accent); text-decoration: none; }
+
+header {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+.bio { flex: 1; }
+h1 { font-size: 1.9rem; font-weight: 600; margin-bottom: 0.25rem; }
+.affiliation { color: var(--muted); margin-bottom: 1rem; }
+.bio p { margin-bottom: 0.9rem; }
+.links { font-size: 0.95rem; }
+
+.photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  background: var(--code-bg);
+}
+
+section { margin-bottom: 2.75rem; }
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1rem;
+}
+
+.news-list, .edu-list { list-style: none; }
+.news-list li, .edu-list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.55rem;
+}
+.date {
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  min-width: 6.5rem;
+  padding-top: 0.1rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.pub { margin-bottom: 1.5rem; }
+.pub-title { font-weight: 600; }
+.pub-authors { font-size: 0.97rem; }
+.pub-venue { font-style: italic; color: var(--muted); font-size: 0.95rem; }
+.pub-links { font-size: 0.92rem; }
+
+.bibtex {
+  display: none;
+  background: var(--code-bg);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+.bibtex.open { display: block; }
+
+.edu-degree { font-weight: 600; }
+.edu-school { color: var(--muted); font-size: 0.95rem; }
+
+footer {
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  header { flex-direction: column-reverse; }
+  .photo { width: 130px; height: 130px; }
+  .news-list li, .edu-list li { flex-direction: column; gap: 0; }
+  .date { min-width: 0; }
+}
