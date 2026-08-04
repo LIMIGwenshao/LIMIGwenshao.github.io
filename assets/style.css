@@ -76,16 +76,16 @@ section { margin-bottom: 2.75rem; }
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 1rem 2.5rem;
+  justify-content: space-between;
+  gap: 1.25rem 1.5rem;
 }
-.logo-row + .logo-row { margin-top: 1.6rem; }
+.logo-row + .logo-row { margin-top: 1.75rem; }
 .logos img { width: auto; object-fit: contain; }
-.lg-wide { height: 30px; }
-.lg-mark { height: 34px; }
-.lg-seal { height: 46px; }
-.lg-tall { height: 52px; }
-.lg-stack { height: 44px; }
+.lg-wide { height: 48px; }
+.lg-mark { height: 52px; }
+.lg-seal { height: 68px; }
+.lg-tall { height: 78px; }
+.lg-stack { height: 66px; }
 
 h2 {
   font-size: 1.25rem;
@@ -150,4 +150,10 @@ footer {
   .photo { width: 130px; height: 130px; }
   .news-list li, .edu-list li { flex-direction: column; gap: 0; }
   .date { width: auto; }
+  .logo-row { justify-content: center; gap: 1.25rem 1.75rem; }
+  .lg-wide { height: 34px; }
+  .lg-mark { height: 38px; }
+  .lg-seal { height: 50px; }
+  .lg-tall { height: 56px; }
+  .lg-stack { height: 48px; }
 }
