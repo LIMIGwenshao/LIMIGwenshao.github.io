@@ -86,7 +86,7 @@ h2 {
   color: var(--muted);
   font-size: 0.9rem;
   white-space: nowrap;
-  min-width: 6.5rem;
+  width: 9rem;
   flex-shrink: 0;
   padding-top: 0.1rem;
   font-family: Helvetica, Arial, sans-serif;
@@ -130,5 +130,5 @@ footer {
   header { flex-direction: column-reverse; }
   .photo { width: 130px; height: 130px; }
   .news-list li, .edu-list li { flex-direction: column; gap: 0; }
-  .date { min-width: 0; }
+  .date { width: auto; }
 }
