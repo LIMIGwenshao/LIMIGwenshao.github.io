@@ -68,6 +68,21 @@ h1 { font-size: 1.9rem; font-weight: 600; margin-bottom: 0.25rem; }
 
 section { margin-bottom: 2.75rem; }
 
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+.logos img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
 h2 {
   font-size: 1.25rem;
   font-weight: 600;
