@@ -96,18 +96,21 @@ h2 {
 }
 
 .news-list, .edu-list { list-style: none; }
+/* The date sits in a left gutter via absolute positioning rather than flex,
+   so inline tags (<b>, <em>) inside an item stay in the text flow. */
 .news-list li, .edu-list li {
-  display: flex;
-  gap: 1rem;
+  position: relative;
+  padding-left: 10rem;
   margin-bottom: 0.55rem;
 }
 .date {
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 9rem;
   color: var(--muted);
   font-size: 0.9rem;
   white-space: nowrap;
-  width: 9rem;
-  flex-shrink: 0;
-  padding-top: 0.1rem;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -148,8 +151,8 @@ footer {
   .banner { height: 160px; }
   header { flex-direction: column-reverse; }
   .photo { width: 130px; height: 130px; }
-  .news-list li, .edu-list li { flex-direction: column; gap: 0; }
-  .date { width: auto; }
+  .news-list li, .edu-list li { position: static; padding-left: 0; }
+  .date { position: static; display: block; width: auto; }
   .logo-row { justify-content: center; gap: 1.25rem 1.75rem; }
   .lg-wide { height: 34px; }
   .lg-mark { height: 38px; }
