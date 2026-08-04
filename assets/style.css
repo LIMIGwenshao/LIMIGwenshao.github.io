@@ -69,19 +69,22 @@ h1 { font-size: 1.9rem; font-weight: 600; margin-bottom: 0.25rem; }
 section { margin-bottom: 2.75rem; }
 
 .logos {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+.logo-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--rule);
+  gap: 1rem 2.5rem;
 }
-.logos img {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
-}
+.logo-row + .logo-row { margin-top: 1.6rem; }
+.logos img { width: auto; object-fit: contain; }
+.lg-wide { height: 30px; }
+.lg-mark { height: 34px; }
+.lg-seal { height: 46px; }
+.lg-tall { height: 52px; }
 
 h2 {
   font-size: 1.25rem;
