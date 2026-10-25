@@ -86,6 +86,7 @@ section { margin-bottom: 2.75rem; }
 .lg-seal { height: 68px; }
 .lg-tall { height: 78px; }
 .lg-stack { height: 66px; }
+.lg-lockup { height: 36px; }
 
 h2 {
   font-size: 1.25rem;
@@ -159,4 +160,5 @@ footer {
   .lg-seal { height: 50px; }
   .lg-tall { height: 56px; }
   .lg-stack { height: 48px; }
+  .lg-lockup { height: 26px; }
 }

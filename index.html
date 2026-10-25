@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wentao Ren (任文涛)</title>
-  <meta name="description" content="Academic homepage of Wentao Ren — MSc student at NTU Singapore. Research on World Action Models, efficient inference for visual language models, and physics AI.">
-  <link rel="stylesheet" href="assets/style.css?v=4">
+  <meta name="description" content="Academic homepage of Wentao Ren — MSc student at NTU Singapore. Research on World Action Models, video diffusion, efficient inference for visual language models, large-scale training systems, and physics AI.">
+  <link rel="stylesheet" href="assets/style.css?v=5">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
   <a href="#about">about</a>
   <a href="#news">news</a>
   <a href="#publications">publications</a>
-  <a href="#research">research</a>
+  <a href="#industry">experience</a>
 </nav>
 
 <header id="about">
@@ -24,7 +24,8 @@
     <p class="affiliation">MSc student in Signal Processing and Machine Learning, Nanyang Technological University</p>
     <p>
       I am an MSc student at <strong>Nanyang Technological University (NTU)</strong>, Singapore,
-      advised by Prof. Weichen Liu, and a long-term joint-training student at the
+      advised by Prof. Weichen Liu, and currently a Large Model Training Framework R&amp;D intern at
+      <strong>Kuaishou Technology (Kling AI)</strong>. Previously, I was a research intern in the AIoT Group of the
       <strong>Institute for AI Industry Research (AIR), Tsinghua University</strong>,
       advised by Prof. Kun Li. In 2025 I received dual B.Eng. degrees in Electronic &amp; Information
       Engineering from <strong>Beijing University of Technology</strong> and
@@ -35,8 +36,8 @@
     </p>
     <p>
       My research interests lie at the intersection of <strong>efficient AI systems</strong> and
-      <strong>physics AI</strong>, including World Action Models,
-      efficient inference and optimization for visual language models, and neural operators
+      <strong>physics AI</strong>, including World Action Models, autoregressive video diffusion,
+      efficient inference and optimization for visual language models, large-scale distributed training, and neural operators
       for thermal analysis of chiplet systems.
       I envision building efficient and <strong>trustworthy AI systems</strong> that understand and
       interact with the <strong>physical world</strong>. I also aim to
@@ -55,6 +56,7 @@
 <section class="logos" aria-label="Affiliations">
   <div class="logo-row">
     <img class="lg-wide" src="assets/logos/ntu.png" alt="Nanyang Technological University">
+    <img class="lg-lockup" src="assets/logos/kling.png" alt="Kling AI, Kuaishou Technology">
     <img class="lg-stack" src="assets/logos/air.png" alt="Institute for AI Industry Research, Tsinghua University">
     <img class="lg-seal" src="assets/logos/bjut.png" alt="Beijing University of Technology">
     <img class="lg-tall" src="assets/logos/ucd.png" alt="University College Dublin">
@@ -71,8 +73,11 @@
   <h2>News</h2>
   <ul class="news-list">
     <!-- To add a news item, copy one <li> block below and edit it. Newest first. -->
+    <li><span class="date">Oct 2026</span> Joined <strong>Kuaishou Technology (Kling AI)</strong> as a Large Model Training Framework R&amp;D intern, working on distributed training of large models on NVIDIA B300 GPU clusters.</li>
+    <li><span class="date">Oct 2026</span> 🎤 <strong>SlimKV</strong> was selected for an <strong>oral presentation at EMNLP 2026</strong>. The preprint is now on <a href="https://arxiv.org/abs/2610.02953">arXiv</a>.</li>
+    <li><span class="date">Sep 2026</span> Submitted two papers to <strong>ICLR 2027</strong>, including my first-author paper <strong>Cache Homeostasis</strong> on feature drift in autoregressive video diffusion.</li>
     <li><span class="date">Aug 2026</span> 🎉 Our paper <strong>SlimKV</strong> was accepted to the <strong>EMNLP 2026 Main Conference</strong>, with review scores ranking above 95% of submissions.</li>
-    <li><span class="date">May 2026</span> Joined the Institute for AI Industry Research (AIR), Tsinghua University as a long-term joint-training student, working on embodied world models with Prof. Kun Li.</li>
+    <li><span class="date">May 2026</span> Joined the AIoT Group of the Institute for AI Industry Research (AIR), Tsinghua University as a research intern, working on embodied world models with Prof. Kun Li.</li>
     <li><span class="date">2026</span> First-author paper on constraint-enhanced neural operators for chiplet thermal analysis published in <em>Microelectronics Reliability</em> (Elsevier).</li>
     <li><span class="date">Jan 2026</span> Attended AAAI 2026.</li>
     <li><span class="date">Aug 2025</span> Started my MSc in Signal Processing and Machine Learning at NTU, Singapore.</li>
@@ -85,6 +90,12 @@
   <h2>Publications &amp; Patents</h2>
   <!-- To add a paper, copy one .pub block below and edit it. Newest first.
        Bold your own name in the author list. -->
+  <div class="pub">
+    <p class="pub-title">Cache Homeostasis: Diagnosing and Controlling Feature Drift in Autoregressive Video Diffusion</p>
+    <p class="pub-authors"><strong>Wentao Ren</strong>, R. Zhang, H. Han, et al.</p>
+    <p class="pub-venue">Under review at ICLR 2027 · First Author</p>
+  </div>
+
   <div class="pub">
     <p class="pub-title"><a href="https://doi.org/10.1016/j.microrel.2026.116207">Hard Constraint Projection Enhanced Neural Operator with Hybrid Sampling for Chiplet System Thermal Analysis</a></p>
     <p class="pub-authors"><strong>Wentao Ren</strong>, Zihan Ke, Qinzhi Xu, et al.</p>
@@ -103,15 +114,15 @@
   </div>
 
   <div class="pub">
-    <p class="pub-title">SlimKV: Joint Token-Feature KV Cache Compression with Reconstruction-Free Beacon Attention</p>
+    <p class="pub-title"><a href="https://arxiv.org/abs/2610.02953">SlimKV: Joint Token-Feature KV Cache Compression with Reconstruction-Free Beacon Attention</a></p>
     <p class="pub-authors">Zihan Teng, Jiayu Zhao, <strong>Wentao Ren</strong>, Minhao Fan, Tianrui Ma, Song Chen, Weichen Liu</p>
-    <p class="pub-venue">EMNLP 2026 Main Conference, Accepted</p>
+    <p class="pub-venue">EMNLP 2026 Main Conference · Oral</p>
   </div>
 
   <div class="pub">
     <p class="pub-title"><a href="https://arxiv.org/abs/2606.00079">BitsMoE: Efficient Spectral Energy-Guided Bit Allocation for MoE LLM Quantization</a></p>
     <p class="pub-authors">Jiayu Zhao, Zihan Teng, Minhao Fan, Tianrui Ma, <strong>Wentao Ren</strong>, Song Chen, Weichen Liu</p>
-    <p class="pub-venue">Under review, 2026</p>
+    <p class="pub-venue">Under review at ICLR 2027</p>
     <p class="pub-links">
       <a href="https://github.com/zjiayu064/BitsMoE">[code]</a>
     </p>
@@ -126,7 +137,17 @@
   <div class="pub">
     <p class="pub-title"><a href="https://doi.org/10.5582/irdr.2023.01091">Artificial Intelligence Technology in Alzheimer's Disease Research</a></p>
     <p class="pub-authors">Wenli Zhang, Yifan Li, <strong>Wentao Ren</strong>, Bo Liu</p>
-    <p class="pub-venue">Intractable &amp; Rare Diseases Research, 2023 · Second Student Author · Cited by 65</p>
+    <p class="pub-venue">Intractable &amp; Rare Diseases Research, 2023 · Second Student Author · Cited by 68</p>
+  </div>
+</section>
+
+<section id="industry">
+  <h2>Industry Experience</h2>
+
+  <div class="pub">
+    <p class="pub-title">Large Model Training Framework R&amp;D</p>
+    <p class="pub-venue">Intern · Kuaishou Technology (Kling AI), Beijing · Oct 2026 – Present</p>
+    <p class="pub-authors">Developing a distributed training framework based on torchtitan and FSDP, adapting the Kling foundation model for efficient training with linear attention and Mixture-of-Experts (MoE) architectures. Optimizing workload balance across large-scale NVIDIA B300 GPU clusters to reduce throughput disparities and synchronization overhead and improve Model FLOPs Utilization (MFU).</p>
   </div>
 </section>
 
@@ -135,8 +156,8 @@
 
   <div class="pub">
     <p class="pub-title">Embodied AI World Model Algorithms</p>
-    <p class="pub-venue">Long-term Joint-Training Student · Institute for AI Industry Research (AIR), Tsinghua University · Advisor: Prof. Kun Li · May 2026 – Present</p>
-    <p class="pub-authors">Research on embodied world models: latent-space representation learning, generative simulation of environmental dynamics, and World Action Models for action-conditioned prediction. Developing an autoregressive diffusion-based embodied foundation model integrating scene understanding, future-state prediction, action generation, and policy optimization.</p>
+    <p class="pub-venue">Research Intern · AIoT Group, Institute for AI Industry Research (AIR), Tsinghua University · Advisor: Prof. Kun Li · May 2026 – Sep 2026</p>
+    <p class="pub-authors">Research on embodied world models: latent-space representation learning, generative simulation of environmental dynamics, and World Action Models for action-conditioned prediction and decision-making. Developed an autoregressive diffusion-based embodied foundation model integrating scene understanding, future-state prediction, action generation, and policy optimization.</p>
   </div>
 
   <div class="pub">
@@ -148,7 +169,7 @@
   <div class="pub">
     <p class="pub-title">Efficient Inference and Compression for Multimodal LLMs</p>
     <p class="pub-venue">Research Assistant · Nanyang Technological University · Advisor: Prof. Weichen Liu · Aug 2025 – May 2026</p>
-    <p class="pub-authors">Investigated KV cache compression, prompt compression, and GPU memory scheduling for efficient MLLM inference on open-source models such as Qwen and DeepSeek. This work contributed to two collaborative papers currently under review, <a href="https://arxiv.org/abs/2606.00079">BitsMoE</a> and SlimKV, both listed above.</p>
+    <p class="pub-authors">Investigated KV cache compression, prompt compression, and GPU memory scheduling for efficient MLLM inference on open-source models such as Qwen and DeepSeek. This work contributed to two collaborative papers listed above: <a href="https://arxiv.org/abs/2610.02953">SlimKV</a> (EMNLP 2026 Oral) and <a href="https://arxiv.org/abs/2606.00079">BitsMoE</a> (under review at ICLR 2027).</p>
   </div>
 
   <div class="pub">
@@ -171,7 +192,7 @@
   <h2>Education</h2>
   <ul class="edu-list">
     <li>
-      <span class="date">2025 – 2026</span>
+      <span class="date">2025 – 2027</span>
       <div>
         <p class="edu-degree">MSc in Signal Processing and Machine Learning</p>
         <p class="edu-school">Nanyang Technological University, Singapore</p>
@@ -197,7 +218,7 @@
   <h2>Inter-School Exchange</h2>
   <ul class="edu-list">
     <li>
-      <span class="date">Nov 2025 – Present</span>
+      <span class="date">Nov 2025 – Sep 2026</span>
       <div>
         <p class="edu-degree">Massachusetts Institute of Technology, Cambridge, MA</p>
         <p class="edu-school">MIT xPRO – Blended AI+X Program · Online courses on AI fundamentals and cross-disciplinary applications, combined with an on-site workshop series and project-based mentoring.</p>
@@ -233,7 +254,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Wentao Ren · Last updated August 2026</p>
+  <p>© 2026 Wentao Ren · Last updated October 2026</p>
   <p class="credit">Banner: <a href="https://commons.wikimedia.org/wiki/File:The_Hive,_NTU_(I).jpg">The Hive, NTU</a> by Supanut Arunoprayote, CC BY 4.0</p>
 </footer>
 
